@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <div class="frame">
+        <div class="timer">
+            <div class="min box" id="min">0</div>
+            <div class="sec box" id="sec">0</div>
+            <div class="mil box" id="mil">0</div>
+        </div>
+        <textarea id="text" class="text-area" placeholder="Start typing" rows="5" disabled></textarea>
+        <textarea id="input" class="text-area" placeholder="Start typing" rows="5"></textarea>
+        <div class="controls">
+            <button id="start" onclick="start()">Start</button>
+            <button id="reset" onclick="reset()">Reset</button>
+            <button id="stop" onclick="stop()">Stop</button>
+            <button id="restart" onclick="restart()">Restart</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

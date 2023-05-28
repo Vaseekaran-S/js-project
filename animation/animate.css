@@ -1,0 +1,55 @@
+.parent{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    z-index: 10;
+    background-color: violet;
+    transition: width 0.5s,height 0.5s,transform 0.5s ease-in-out,background-color 0.5s,border-radius 1.4s;
+}
+
+.card:hover{
+    background-color: red;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    transform: rotate(180deg);
+}
+
+.orbit{
+    margin: 200px;
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    background-image: radial-gradient(yellow 20%,orange 50%,red 100%);
+    border-radius: 50%;
+    transition: background-image 3s,rotate 9s;
+    animation: orbit 10s 3s linear 2;
+}
+
+@keyframes orbit {
+    form { rotate: 0deg; }
+    to { rotate: 360deg; }
+}
+
+.orbit::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    translate: -100px;
+    border-radius: 50%;
+}
+
+/* .orbit:hover{
+    rotate: 360deg;
+    background-image: repeating-radial-gradient(circle at center, red 0, blue, green 30px);
+} */
