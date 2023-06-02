@@ -33,12 +33,29 @@
     align-items: center;
 }
 
-.f-align-r{
+.flex-center-column{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
+.m-col{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.link > a{
+    color: aliceblue;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* .link >a:hover{
+    >span{
+        color: #0969da;
+    }
+} */
 
 
 /* For Index Page */
@@ -82,6 +99,7 @@
     background-color: #EDF5E1;
     border-radius: 5px;
     overflow: hidden;
+    position: relative;
     >a{
         list-style: none;
         text-decoration: none;
@@ -93,9 +111,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: transform .2s;
+        transition: transform .2s ease-out;
     }
-
+    
     >a>div>h5{
         display: flex;
         align-items: center;
@@ -110,4 +128,16 @@
             color: #2d115f;
         }
     }
+}
+
+.box .badge{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: larger;
+    font-weight: 700;
+    color: #EDF5E1;
+    background-color: #242582;
 }
