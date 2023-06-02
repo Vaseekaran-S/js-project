@@ -23,6 +23,8 @@
     transform: rotate(180deg);
 }
 
+/* Style for Orbit  */
+
 .orbit{
     margin: 200px;
     width: 150px;
@@ -45,11 +47,31 @@
     width: 30px;
     height: 30px;
     background-color: green;
-    translate: -100px;
+    translate: -200px;
     border-radius: 50%;
 }
 
-/* .orbit:hover{
+.orbit::before::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(43, 255, 0);
+    translate: -50px 10px;
+    border-radius: 50%;
+}
+
+.orbit::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    translate: -50px 10px;
+    border-radius: 50%;
+}
+
+.orbit:hover{
     rotate: 360deg;
-    background-image: repeating-radial-gradient(circle at center, red 0, blue, green 30px);
-} */
+    background-image: repeating-radial-gradient(circle at center, rgb(10, 5, 5) 0, rgb(255, 213, 0), green 50px);
+}

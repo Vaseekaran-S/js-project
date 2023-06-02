@@ -67,7 +67,7 @@
     overflow: hidden;
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 20px;
+    gap: 25px;
     padding: 20px;
 }
 
@@ -93,7 +93,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: transform .3s;
+        transition: transform .2s;
     }
 
     >a>div>h5{
@@ -101,10 +101,13 @@
         align-items: center;
         justify-content: center;
         width: 300px;
+        color: #242582;
     }
 
     >a>div:hover{
-        transform: scale(1.5);
-        z-index: 0;
+        transform: scale(1.5) rotate(360deg);
+        >h5{
+            color: #2d115f;
+        }
     }
 }
